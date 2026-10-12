@@ -1,0 +1,42 @@
+{
+  "generator": "offlineai-bench-v0.1-seed42",
+  "n_total": 450,
+  "n_train": 315,
+  "n_dev": 72,
+  "n_test": 63,
+  "fault_counts_all": {
+    "packet_loss": 50,
+    "latency_jitter": 50,
+    "partition": 50,
+    "dup": 50,
+    "reorder": 50,
+    "crash": 50,
+    "long_offline": 50,
+    "concurrent_edits": 50,
+    "large_payload_sync": 50
+  },
+  "fault_counts_test": {
+    "packet_loss": 7,
+    "latency_jitter": 7,
+    "partition": 7,
+    "dup": 7,
+    "reorder": 7,
+    "crash": 7,
+    "long_offline": 7,
+    "concurrent_edits": 7,
+    "large_payload_sync": 7
+  },
+  "paths": {
+    "train": "/workspace/paper-23-offlineai/data/generated/offlineaibench_v0.1_train.jsonl",
+    "dev": "/workspace/paper-23-offlineai/data/generated/offlineaibench_v0.1_dev.jsonl",
+    "test": "/workspace/paper-23-offlineai/data/generated/offlineaibench_v0.1_test.jsonl",
+    "all": "/workspace/paper-23-offlineai/data/generated/offlineaibench_v0.1.jsonl"
+  },
+  "checksums": {
+    "train": "67b45c8ba351d8f0bdba4fe9c402765063a25a3ac2cb1cd6d555e42607ea16c6",
+    "dev": "1c7494cf9c6c116dfa592cd9111068633163d8cff49efe03b7473d7be11a0372",
+    "test": "7789dadacc939c76d49392b783e1380b60c9fced6edf0665e98db60af9353a31",
+    "all": "bad51f81357a7774bd695370538ca2c78644780dd99bcd37f4031471becdc2ed"
+  },
+  "seed": 42
+}

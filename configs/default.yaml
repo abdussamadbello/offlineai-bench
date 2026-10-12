@@ -1,0 +1,26 @@
+seed: 42
+n_total: 450
+generator_id: offlineai-bench-v0.1-seed42
+splits:
+  train: 0.70
+  dev: 0.15
+  test: 0.15
+conditions:
+  - cloud_only
+  - naive_retry_queue
+  - durable_idempotent_queue
+fault_types:
+  - packet_loss
+  - latency_jitter
+  - partition
+  - dup
+  - reorder
+  - crash
+  - long_offline
+  - concurrent_edits
+  - large_payload_sync
+paths:
+  data_generated: data/generated
+  manifests: data/manifests
+  runs: runs
+  artifacts: artifacts

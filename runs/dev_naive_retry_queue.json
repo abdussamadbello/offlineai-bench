@@ -1,0 +1,96 @@
+{
+  "split": "dev",
+  "condition": "naive_retry_queue",
+  "metrics": {
+    "lost_mutation_rate": 0.015625,
+    "duplicate_rate": 0.3662863756613757,
+    "convergence_time_proxy": 2901.3888888888887,
+    "conflict_count": 0.0,
+    "sync_throughput_proxy": 4.400400865400119,
+    "user_visible_failure_rate": 0.015625,
+    "n_scenarios": 72.0,
+    "by_fault": {
+      "concurrent_edits": {
+        "lost_mutation_rate": 0.0,
+        "duplicate_rate": 0.221875,
+        "convergence_time_proxy": 205.0,
+        "conflict_count": 0.0,
+        "sync_throughput_proxy": 6.0,
+        "user_visible_failure_rate": 0.0,
+        "n_scenarios": 8.0
+      },
+      "crash": {
+        "lost_mutation_rate": 0.140625,
+        "duplicate_rate": 0.20104166666666667,
+        "convergence_time_proxy": 15661.25,
+        "conflict_count": 0.0,
+        "sync_throughput_proxy": 1.73,
+        "user_visible_failure_rate": 0.140625,
+        "n_scenarios": 8.0
+      },
+      "dup": {
+        "lost_mutation_rate": 0.0,
+        "duplicate_rate": 1.3126488095238096,
+        "convergence_time_proxy": 128.75,
+        "conflict_count": 0.0,
+        "sync_throughput_proxy": 5.625,
+        "user_visible_failure_rate": 0.0,
+        "n_scenarios": 8.0
+      },
+      "large_payload_sync": {
+        "lost_mutation_rate": 0.0,
+        "duplicate_rate": 0.337797619047619,
+        "convergence_time_proxy": 387.5,
+        "conflict_count": 0.0,
+        "sync_throughput_proxy": 4.5,
+        "user_visible_failure_rate": 0.0,
+        "n_scenarios": 8.0
+      },
+      "latency_jitter": {
+        "lost_mutation_rate": 0.0,
+        "duplicate_rate": 0.14285714285714285,
+        "convergence_time_proxy": 723.75,
+        "conflict_count": 0.0,
+        "sync_throughput_proxy": 5.41743119266055,
+        "user_visible_failure_rate": 0.0,
+        "n_scenarios": 8.0
+      },
+      "long_offline": {
+        "lost_mutation_rate": 0.0,
+        "duplicate_rate": 0.30833333333333335,
+        "convergence_time_proxy": 7708.75,
+        "conflict_count": 0.0,
+        "sync_throughput_proxy": 0.759540757633018,
+        "user_visible_failure_rate": 0.0,
+        "n_scenarios": 8.0
+      },
+      "packet_loss": {
+        "lost_mutation_rate": 0.0,
+        "duplicate_rate": 0.24107142857142855,
+        "convergence_time_proxy": 135.0,
+        "conflict_count": 0.0,
+        "sync_throughput_proxy": 6.125,
+        "user_visible_failure_rate": 0.0,
+        "n_scenarios": 8.0
+      },
+      "partition": {
+        "lost_mutation_rate": 0.0,
+        "duplicate_rate": 0.259672619047619,
+        "convergence_time_proxy": 885.0,
+        "conflict_count": 0.0,
+        "sync_throughput_proxy": 3.8216358383074978,
+        "user_visible_failure_rate": 0.0,
+        "n_scenarios": 8.0
+      },
+      "reorder": {
+        "lost_mutation_rate": 0.0,
+        "duplicate_rate": 0.2712797619047619,
+        "convergence_time_proxy": 277.5,
+        "conflict_count": 0.0,
+        "sync_throughput_proxy": 5.625,
+        "user_visible_failure_rate": 0.0,
+        "n_scenarios": 8.0
+      }
+    }
+  }
+}

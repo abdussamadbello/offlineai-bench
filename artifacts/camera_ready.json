@@ -1,0 +1,5209 @@
+{
+ "seeds": [
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51
+ ],
+ "python": "3.13.5",
+ "platform": "Linux-6.12.94+-x86_64-with-glibc2.41",
+ "started_local": "2026-10-12 07:23:39 WAT",
+ "v01_overall": {
+  "cloud_only": {
+   "lost_mutation_rate": {
+    "mean": 0.24687074829931968,
+    "lo": 0.2293497615242395,
+    "hi": 0.26439173507439984
+   },
+   "duplicate_rate": {
+    "mean": 0.2692554799697657,
+    "lo": 0.24917329363497784,
+    "hi": 0.2893376663045535
+   },
+   "redelivery_dup_rate": {
+    "mean": 0.051300075585789875,
+    "lo": 0.04581264685765274,
+    "hi": 0.05678750431392701
+   },
+   "create_collision_rate": {
+    "mean": 0.19817271352985638,
+    "lo": 0.1819271872819974,
+    "hi": 0.21441823977771537
+   },
+   "user_visible_failure_rate": {
+    "mean": 0.24687074829931968,
+    "lo": 0.2293497615242395,
+    "hi": 0.26439173507439984
+   },
+   "convergence_time_proxy": {
+    "mean": 11718.063492063493,
+    "lo": 10990.194669817034,
+    "hi": 12445.932314309952
+   },
+   "conflict_count": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0
+   }
+  },
+  "naive_retry_queue": {
+   "lost_mutation_rate": {
+    "mean": 0.015742630385487528,
+    "lo": 0.012424080961672156,
+    "hi": 0.0190611798093029
+   },
+   "duplicate_rate": {
+    "mean": 0.3224130763416477,
+    "lo": 0.2988890157547989,
+    "hi": 0.3459371369284964
+   },
+   "redelivery_dup_rate": {
+    "mean": 0.051300075585789875,
+    "lo": 0.04581264685765274,
+    "hi": 0.05678750431392701
+   },
+   "create_collision_rate": {
+    "mean": 0.25133030990173844,
+    "lo": 0.23157455614358974,
+    "hi": 0.27108606365988713
+   },
+   "user_visible_failure_rate": {
+    "mean": 0.015742630385487528,
+    "lo": 0.012424080961672156,
+    "hi": 0.0190611798093029
+   },
+   "convergence_time_proxy": {
+    "mean": 2860.9841269841268,
+    "lo": 2491.5832282272313,
+    "hi": 3230.385025741022
+   },
+   "conflict_count": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0
+   }
+  },
+  "durable_idempotent_queue": {
+   "lost_mutation_rate": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0
+   },
+   "duplicate_rate": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0
+   },
+   "redelivery_dup_rate": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0
+   },
+   "create_collision_rate": {
+    "mean": 0.2544671201814058,
+    "lo": 0.23431775366308571,
+    "hi": 0.27461648669972594
+   },
+   "user_visible_failure_rate": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0
+   },
+   "convergence_time_proxy": {
+    "mean": 1202.0634920634918,
+    "lo": 1130.9820366357537,
+    "hi": 1273.14494749123
+   },
+   "conflict_count": {
+    "mean": 0.1476190476190476,
+    "lo": 0.1028188388715657,
+    "hi": 0.19241925636652948
+   }
+  }
+ },
+ "v01_by_fault": {
+  "cloud_only": {
+   "concurrent_edits": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.29994897959183675,
+     "lo": 0.24016865573175186,
+     "hi": 0.35972930345192167
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.29994897959183675,
+     "lo": 0.24016865573175186,
+     "hi": 0.35972930345192167
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 191.28571428571428,
+     "lo": 178.2122672887134,
+     "hi": 204.35916128271515
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "crash": {
+    "lost_mutation_rate": {
+     "mean": 0.25079931972789116,
+     "lo": 0.20946521084467534,
+     "hi": 0.29213342861110697
+    },
+    "duplicate_rate": {
+     "mean": 0.17641156462585034,
+     "lo": 0.13547540997717766,
+     "hi": 0.217347719274523
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.17641156462585034,
+     "lo": 0.13547540997717766,
+     "hi": 0.217347719274523
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.25079931972789116,
+     "lo": 0.20946521084467534,
+     "hi": 0.29213342861110697
+    },
+    "convergence_time_proxy": {
+     "mean": 20022.571428571428,
+     "lo": 16805.17253890681,
+     "hi": 23239.970318236046
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "dup": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.8901530612244898,
+     "lo": 0.7831315846125687,
+     "hi": 0.9971745378364109
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.46170068027210875,
+     "lo": 0.41231382171887454,
+     "hi": 0.511087538825343
+    },
+    "create_collision_rate": {
+     "mean": 0.2504081632653061,
+     "lo": 0.20779445549280673,
+     "hi": 0.2930218710378055
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 122.28571428571426,
+     "lo": 109.35730668870042,
+     "hi": 135.2141218827281
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "large_payload_sync": {
+    "lost_mutation_rate": {
+     "mean": 0.18185374149659864,
+     "lo": 0.12282331110365313,
+     "hi": 0.24088417188954414
+    },
+    "duplicate_rate": {
+     "mean": 0.21777210884353743,
+     "lo": 0.16166420659461844,
+     "hi": 0.2738800110924564
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.21777210884353743,
+     "lo": 0.16166420659461844,
+     "hi": 0.2738800110924564
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.18185374149659864,
+     "lo": 0.12282331110365313,
+     "hi": 0.24088417188954414
+    },
+    "convergence_time_proxy": {
+     "mean": 16552.428571428572,
+     "lo": 12238.008031264842,
+     "hi": 20866.849111592303
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "latency_jitter": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.27428571428571424,
+     "lo": 0.215844364991527,
+     "hi": 0.33272706357990145
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.27428571428571424,
+     "lo": 0.215844364991527,
+     "hi": 0.33272706357990145
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 780.5714285714286,
+     "lo": 721.8690928838888,
+     "hi": 839.2737642589683
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "long_offline": {
+    "lost_mutation_rate": {
+     "mean": 1.0,
+     "lo": 1.0,
+     "hi": 1.0
+    },
+    "duplicate_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "user_visible_failure_rate": {
+     "mean": 1.0,
+     "lo": 1.0,
+     "hi": 1.0
+    },
+    "convergence_time_proxy": {
+     "mean": 25000.0,
+     "lo": 25000.0,
+     "hi": 25000.0
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "packet_loss": {
+    "lost_mutation_rate": {
+     "mean": 0.426734693877551,
+     "lo": 0.3543753306553844,
+     "hi": 0.49909405709971755
+    },
+    "duplicate_rate": {
+     "mean": 0.15219387755102037,
+     "lo": 0.10199707000147865,
+     "hi": 0.2023906851005621
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.15219387755102037,
+     "lo": 0.10199707000147865,
+     "hi": 0.2023906851005621
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.426734693877551,
+     "lo": 0.3543753306553844,
+     "hi": 0.49909405709971755
+    },
+    "convergence_time_proxy": {
+     "mean": 23221.571428571428,
+     "lo": 21422.326763031804,
+     "hi": 25020.81609411105
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "partition": {
+    "lost_mutation_rate": {
+     "mean": 0.3624489795918367,
+     "lo": 0.29085051438782206,
+     "hi": 0.43404744479585133
+    },
+    "duplicate_rate": {
+     "mean": 0.18518707482993196,
+     "lo": 0.1392208971874614,
+     "hi": 0.23115325247240254
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.18518707482993196,
+     "lo": 0.1392208971874614,
+     "hi": 0.23115325247240254
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.3624489795918367,
+     "lo": 0.29085051438782206,
+     "hi": 0.43404744479585133
+    },
+    "convergence_time_proxy": {
+     "mean": 19304.85714285714,
+     "lo": 15663.87305038075,
+     "hi": 22945.841235333533
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "reorder": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.22734693877551018,
+     "lo": 0.1711615767111036,
+     "hi": 0.28353230083991676
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.22734693877551018,
+     "lo": 0.1711615767111036,
+     "hi": 0.28353230083991676
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 267.0,
+     "lo": 236.13644404561404,
+     "hi": 297.86355595438596
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   }
+  },
+  "naive_retry_queue": {
+   "concurrent_edits": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.29994897959183675,
+     "lo": 0.24016865573175186,
+     "hi": 0.35972930345192167
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.29994897959183675,
+     "lo": 0.24016865573175186,
+     "hi": 0.35972930345192167
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 191.28571428571428,
+     "lo": 178.2122672887134,
+     "hi": 204.35916128271515
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "crash": {
+    "lost_mutation_rate": {
+     "mean": 0.14168367346938776,
+     "lo": 0.11181672865504941,
+     "hi": 0.17155061828372611
+    },
+    "duplicate_rate": {
+     "mean": 0.21197278911564627,
+     "lo": 0.1734818732852995,
+     "hi": 0.250463704945993
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.21197278911564627,
+     "lo": 0.1734818732852995,
+     "hi": 0.250463704945993
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.14168367346938776,
+     "lo": 0.11181672865504941,
+     "hi": 0.17155061828372611
+    },
+    "convergence_time_proxy": {
+     "mean": 15049.142857142859,
+     "lo": 11921.913381448432,
+     "hi": 18176.372332837283
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "dup": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.8901530612244898,
+     "lo": 0.7831315846125687,
+     "hi": 0.9971745378364109
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.46170068027210875,
+     "lo": 0.41231382171887454,
+     "hi": 0.511087538825343
+    },
+    "create_collision_rate": {
+     "mean": 0.2504081632653061,
+     "lo": 0.20779445549280673,
+     "hi": 0.2930218710378055
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 122.28571428571426,
+     "lo": 109.35730668870042,
+     "hi": 135.2141218827281
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "large_payload_sync": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.26914965986394557,
+     "lo": 0.20653394158264027,
+     "hi": 0.33176537814525087
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.26914965986394557,
+     "lo": 0.20653394158264027,
+     "hi": 0.33176537814525087
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 406.28571428571433,
+     "lo": 369.7898076512793,
+     "hi": 442.78162092014935
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "latency_jitter": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.27428571428571424,
+     "lo": 0.215844364991527,
+     "hi": 0.33272706357990145
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.27428571428571424,
+     "lo": 0.215844364991527,
+     "hi": 0.33272706357990145
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 780.5714285714286,
+     "lo": 721.8690928838888,
+     "hi": 839.2737642589683
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "long_offline": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.21619047619047618,
+     "lo": 0.17849702666388023,
+     "hi": 0.25388392571707213
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.21619047619047618,
+     "lo": 0.17849702666388023,
+     "hi": 0.25388392571707213
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 7668.714285714285,
+     "lo": 7056.038077066547,
+     "hi": 8281.390494362024
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "packet_loss": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.2636394557823129,
+     "lo": 0.22565243070194985,
+     "hi": 0.30162648086267596
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.2636394557823129,
+     "lo": 0.22565243070194985,
+     "hi": 0.30162648086267596
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 132.85714285714286,
+     "lo": 122.28064230622415,
+     "hi": 143.43364340806158
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "partition": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.24903061224489792,
+     "lo": 0.20213097523752857,
+     "hi": 0.2959302492522673
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.24903061224489792,
+     "lo": 0.20213097523752857,
+     "hi": 0.2959302492522673
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 1130.7142857142858,
+     "lo": 976.5176179836279,
+     "hi": 1284.9109534449435
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "reorder": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.22734693877551018,
+     "lo": 0.1711615767111036,
+     "hi": 0.28353230083991676
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.22734693877551018,
+     "lo": 0.1711615767111036,
+     "hi": 0.28353230083991676
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 267.0,
+     "lo": 236.13644404561404,
+     "hi": 297.86355595438596
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   }
+  },
+  "durable_idempotent_queue": {
+   "concurrent_edits": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.29994897959183675,
+     "lo": 0.24016865573175186,
+     "hi": 0.35972930345192167
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 191.28571428571428,
+     "lo": 178.2122672887134,
+     "hi": 204.35916128271515
+    },
+    "conflict_count": {
+     "mean": 0.8428571428571429,
+     "lo": 0.5998257529926545,
+     "hi": 1.0858885327216312
+    }
+   },
+   "crash": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.24020408163265308,
+     "lo": 0.2005242669879323,
+     "hi": 0.27988389627737387
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 118.85714285714285,
+     "lo": 108.88138576570259,
+     "hi": 128.8328999485831
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "dup": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.2504081632653061,
+     "lo": 0.20779445549280673,
+     "hi": 0.2930218710378055
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 122.28571428571426,
+     "lo": 109.35730668870042,
+     "hi": 135.2141218827281
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "large_payload_sync": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.26914965986394557,
+     "lo": 0.20653394158264027,
+     "hi": 0.33176537814525087
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 406.28571428571433,
+     "lo": 369.7898076512793,
+     "hi": 442.78162092014935
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "latency_jitter": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.27428571428571424,
+     "lo": 0.215844364991527,
+     "hi": 0.33272706357990145
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 780.5714285714286,
+     "lo": 721.8690928838888,
+     "hi": 839.2737642589683
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "long_offline": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.21619047619047618,
+     "lo": 0.17849702666388023,
+     "hi": 0.25388392571707213
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 7668.714285714285,
+     "lo": 7056.038077066547,
+     "hi": 8281.390494362024
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "packet_loss": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.2636394557823129,
+     "lo": 0.22565243070194985,
+     "hi": 0.30162648086267596
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 132.85714285714286,
+     "lo": 122.28064230622415,
+     "hi": 143.43364340806158
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "partition": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.24903061224489792,
+     "lo": 0.20213097523752857,
+     "hi": 0.2959302492522673
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 1130.7142857142858,
+     "lo": 976.5176179836279,
+     "hi": 1284.9109534449435
+    },
+    "conflict_count": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   },
+   "reorder": {
+    "lost_mutation_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "duplicate_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "redelivery_dup_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collision_rate": {
+     "mean": 0.22734693877551018,
+     "lo": 0.1711615767111036,
+     "hi": 0.28353230083991676
+    },
+    "user_visible_failure_rate": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "convergence_time_proxy": {
+     "mean": 267.0,
+     "lo": 236.13644404561404,
+     "hi": 297.86355595438596
+    },
+    "conflict_count": {
+     "mean": 0.48571428571428565,
+     "lo": 0.25367449254651175,
+     "hi": 0.7177540788820596
+    }
+   }
+  }
+ },
+ "v02": {
+  "cloud_only": {
+   "overall": {
+    "lost": {
+     "mean": 0.1883777131261812,
+     "lo": 0.1748867143172538,
+     "hi": 0.2018687119351086
+    },
+    "redelivery_dups": {
+     "mean": 0.04229299336917276,
+     "lo": 0.03664618445327571,
+     "hi": 0.04793980228506982
+    },
+    "uvf": {
+     "mean": 0.21016556195882585,
+     "lo": 0.1978353036715045,
+     "hi": 0.2224958202461472
+    },
+    "phantom_failures": {
+     "mean": 0.017351102727700234,
+     "lo": 0.014826850094886164,
+     "hi": 0.019875355360514303
+    },
+    "conflicts_surfaced": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "silent_overwrites": {
+     "mean": 0.039954560435119975,
+     "lo": 0.03174327825304653,
+     "hi": 0.04816584261719342
+    },
+    "silent_discards": {
+     "mean": 0.009137398698029252,
+     "lo": 0.0029950740248482393,
+     "hi": 0.015279723371210266
+    },
+    "create_collisions": {
+     "mean": 0.21102925489197907,
+     "lo": 0.19693984594242128,
+     "hi": 0.22511866384153686
+    },
+    "silent_total": {
+     "mean": 0.049091959133149225,
+     "lo": 0.0378388096243656,
+     "hi": 0.06034510864193285
+    },
+    "convergence_ms": {
+     "mean": 404.4880952380952,
+     "lo": 389.8830062283212,
+     "hi": 419.09318424786915
+    },
+    "bytes_amp": {
+     "mean": 0.9854910415329089,
+     "lo": 0.982102987819985,
+     "hi": 0.9888790952458328
+    },
+    "bytes_per_mut": {
+     "mean": 15438.83541910332,
+     "lo": 13745.35708597509,
+     "hi": 17132.31375223155
+    }
+   },
+   "by_fault": {
+    "packet_loss": {
+     "lost": {
+      "mean": 0.3744588374750559,
+      "lo": 0.32494407719244567,
+      "hi": 0.4239735977576661
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.3744588374750559,
+      "lo": 0.32494407719244567,
+      "hi": 0.4239735977576661
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.12889733323216307,
+      "lo": 0.07810278932985205,
+      "hi": 0.1796918771344741
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 460.14285714285717,
+      "lo": 440.71437664909115,
+      "hi": 479.5713376366232
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1954.9834048754346,
+      "lo": 1859.1490455261792,
+      "hi": 2050.81776422469
+     }
+    },
+    "latency_jitter": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.24298761302612393,
+      "lo": 0.19189426705881485,
+      "hi": 0.294080958993433
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 725.1428571428572,
+      "lo": 676.9099611302382,
+      "hi": 773.3757531554762
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 2131.8879111351193,
+      "lo": 2021.197336242927,
+      "hi": 2242.5784860273116
+     }
+    },
+    "partition": {
+     "lost": {
+      "mean": 0.3458690654638897,
+      "lo": 0.2548011349935192,
+      "hi": 0.43693699593426016
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.3458690654638897,
+      "lo": 0.2548011349935192,
+      "hi": 0.43693699593426016
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.19249615989394273,
+      "lo": 0.14731306440410202,
+      "hi": 0.23767925538378343
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 106.28571428571429,
+      "lo": 96.23578697534776,
+      "hi": 116.33564159608082
+     },
+     "bytes_amp": {
+      "mean": 0.6668832761116459,
+      "lo": 0.5767793127261737,
+      "hi": 0.7569872394971181
+     },
+     "bytes_per_mut": {
+      "mean": 1322.0506501179145,
+      "lo": 1139.388670842608,
+      "hi": 1504.712629393221
+     }
+    },
+    "dup": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.5114520678115484,
+      "lo": 0.4639955598687802,
+      "hi": 0.5589085757543166
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.23074328411260012,
+      "lo": 0.18044773028683075,
+      "hi": 0.2810388379383695
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 123.42857142857142,
+      "lo": 115.642738799132,
+      "hi": 131.2144040580108
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1910.9445771972937,
+      "lo": 1773.8910525928009,
+      "hi": 2047.9981018017866
+     }
+    },
+    "reorder": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.2900784513867678,
+      "lo": 0.2237039461040564,
+      "hi": 0.3564529566694792
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 230.2857142857143,
+      "lo": 196.26950586117164,
+      "hi": 264.301922710257
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 2121.073647159992,
+      "lo": 2041.2174738050378,
+      "hi": 2200.929820514946
+     }
+    },
+    "crash": {
+     "lost": {
+      "mean": 0.19896790072951062,
+      "lo": 0.15778977852897091,
+      "hi": 0.24014602293005033
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.19896790072951062,
+      "lo": 0.15778977852897091,
+      "hi": 0.24014602293005033
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.2243067160389142,
+      "lo": 0.17579588630539172,
+      "hi": 0.27281754577243666
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 280.14285714285717,
+      "lo": 218.42016311906943,
+      "hi": 341.8655511666449
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 2114.1754829512106,
+      "lo": 1966.128388245476,
+      "hi": 2262.2225776569453
+     }
+    },
+    "long_offline": {
+     "lost": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 106.0,
+      "lo": 94.3004041075627,
+      "hi": 117.6995958924373
+     },
+     "bytes_amp": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "bytes_per_mut": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     }
+    },
+    "concurrent_edits": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.1596495986905194,
+      "lo": 0.12429482679020652,
+      "hi": 0.19500437059083225
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.25335556513945257,
+      "lo": 0.19967229040421028,
+      "hi": 0.3070388398746949
+     },
+     "silent_total": {
+      "mean": 0.1596495986905194,
+      "lo": 0.12429482679020652,
+      "hi": 0.19500437059083225
+     },
+     "convergence_ms": {
+      "mean": 190.57142857142856,
+      "lo": 181.96446591686922,
+      "hi": 199.1783912259879
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1941.7707862280113,
+      "lo": 1838.2505549033222,
+      "hi": 2045.2910175527004
+     }
+    },
+    "large_payload_sync": {
+     "lost": {
+      "mean": 0.2021077224999221,
+      "lo": 0.163782714196169,
+      "hi": 0.2404327308036752
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.2021077224999221,
+      "lo": 0.163782714196169,
+      "hi": 0.2404327308036752
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.23026031047070772,
+      "lo": 0.20089175054053277,
+      "hi": 0.25962887040088267
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 783.7142857142857,
+      "lo": 699.224152432602,
+      "hi": 868.2044189959694
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 158446.52245653642,
+      "lo": 146385.46263771388,
+      "hi": 170507.58227535896
+     }
+    },
+    "partial_write": {
+     "lost": {
+      "mean": 0.13075087970084381,
+      "lo": 0.08730647176808495,
+      "hi": 0.17419528763360267
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.40587438830444567,
+      "lo": 0.3577437784274328,
+      "hi": 0.4540049981814585
+     },
+     "phantom_failures": {
+      "mean": 0.2204518210956518,
+      "lo": 0.17395854686288714,
+      "hi": 0.2669450953284165
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.21560486955752375,
+      "lo": 0.17327847759155446,
+      "hi": 0.25793126152349305
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 419.14285714285717,
+      "lo": 392.99862608172884,
+      "hi": 445.2870882039855
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 2035.1146356741883,
+      "lo": 1928.1526731446472,
+      "hi": 2142.076598203729
+     }
+    },
+    "clock_skew": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.1033388377878833,
+      "lo": 0.03224453211018043,
+      "hi": 0.1744331434655862
+     },
+     "create_collisions": {
+      "mean": 0.27325475587603415,
+      "lo": 0.22325876610929074,
+      "hi": 0.32325074564277756
+     },
+     "silent_total": {
+      "mean": 0.1033388377878833,
+      "lo": 0.03224453211018043,
+      "hi": 0.1744331434655862
+     },
+     "convergence_ms": {
+      "mean": 198.57142857142858,
+      "lo": 187.28374959630847,
+      "hi": 209.8591075465487
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1931.9540084089385,
+      "lo": 1827.6975669444953,
+      "hi": 2036.2104498733818
+     }
+    },
+    "conflict_storm": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.3320129941897183,
+      "lo": 0.2680392731589736,
+      "hi": 0.395986715220463
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.24877131766197103,
+      "lo": 0.2000110384665447,
+      "hi": 0.29753159685739733
+     },
+     "silent_total": {
+      "mean": 0.3320129941897183,
+      "lo": 0.2680392731589736,
+      "hi": 0.395986715220463
+     },
+     "convergence_ms": {
+      "mean": 1230.4285714285713,
+      "lo": 1095.3375265285042,
+      "hi": 1365.5196163286384
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1935.998636298416,
+      "lo": 1818.6649937180487,
+      "hi": 2053.332278878783
+     }
+    }
+   },
+   "cpu_ms_per_scenario": 0.22883482619047635,
+   "n_scenarios": 840,
+   "maxrss_mib": 104.1484375,
+   "rss_after_import_mib": 103.9296875
+  },
+  "naive_retry_queue": {
+   "overall": {
+    "lost": {
+     "mean": 0.017802666733814042,
+     "lo": 0.013658297167646674,
+     "hi": 0.02194703629998141
+    },
+    "redelivery_dups": {
+     "mean": 0.0678225572430022,
+     "lo": 0.06135588154617487,
+     "hi": 0.07428923293982952
+    },
+    "uvf": {
+     "mean": 0.022239412838758427,
+     "lo": 0.01852507241291592,
+     "hi": 0.025953753264600934
+    },
+    "phantom_failures": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "conflicts_surfaced": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "silent_overwrites": {
+     "mean": 0.039954560435119975,
+     "lo": 0.03174327825304653,
+     "hi": 0.04816584261719342
+    },
+    "silent_discards": {
+     "mean": 0.009137398698029252,
+     "lo": 0.0029950740248482393,
+     "hi": 0.015279723371210266
+    },
+    "create_collisions": {
+     "mean": 0.2560268583778735,
+     "lo": 0.24242934568064795,
+     "hi": 0.269624371075099
+    },
+    "silent_total": {
+     "mean": 0.049091959133149225,
+     "lo": 0.0378388096243656,
+     "hi": 0.06034510864193285
+    },
+    "convergence_ms": {
+     "mean": 1161.2261904761904,
+     "lo": 1088.0610133668413,
+     "hi": 1234.3913675855395
+    },
+    "bytes_amp": {
+     "mean": 1.2307980108179213,
+     "lo": 1.1858720006401227,
+     "hi": 1.27572402099572
+    },
+    "bytes_per_mut": {
+     "mean": 19271.31898543858,
+     "lo": 17072.309374789394,
+     "hi": 21470.328596087762
+    }
+   },
+   "by_fault": {
+    "packet_loss": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.18372785306579512,
+      "lo": 0.12575110555098418,
+      "hi": 0.24170460058060605
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 838.8571428571429,
+      "lo": 690.7157776934307,
+      "hi": 986.9985080208551
+     },
+     "bytes_amp": {
+      "mean": 1.5358624734536006,
+      "lo": 1.406800781286132,
+      "hi": 1.6649241656210692
+     },
+     "bytes_per_mut": {
+      "mean": 3009.345279622018,
+      "lo": 2679.157442274007,
+      "hi": 3339.5331169700294
+     }
+    },
+    "latency_jitter": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.24298761302612393,
+      "lo": 0.19189426705881485,
+      "hi": 0.294080958993433
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 725.1428571428572,
+      "lo": 676.9099611302382,
+      "hi": 773.3757531554762
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 2131.8879111351193,
+      "lo": 2021.197336242927,
+      "hi": 2242.5784860273116
+     }
+    },
+    "partition": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.28778176399208866,
+      "lo": 0.24299292522901897,
+      "hi": 0.3325706027551584
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 1037.5714285714284,
+      "lo": 774.3125364692653,
+      "hi": 1300.8303206735916
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1984.0792212173096,
+      "lo": 1897.664137197418,
+      "hi": 2070.4943052372014
+     }
+    },
+    "dup": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.5114520678115484,
+      "lo": 0.4639955598687802,
+      "hi": 0.5589085757543166
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.23074328411260012,
+      "lo": 0.18044773028683075,
+      "hi": 0.2810388379383695
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 123.42857142857142,
+      "lo": 115.642738799132,
+      "hi": 131.2144040580108
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1910.9445771972937,
+      "lo": 1773.8910525928009,
+      "hi": 2047.9981018017866
+     }
+    },
+    "reorder": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.2900784513867678,
+      "lo": 0.2237039461040564,
+      "hi": 0.3564529566694792
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 230.2857142857143,
+      "lo": 196.26950586117164,
+      "hi": 264.301922710257
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 2121.073647159992,
+      "lo": 2041.2174738050378,
+      "hi": 2200.929820514946
+     }
+    },
+    "crash": {
+     "lost": {
+      "mean": 0.10561289778008046,
+      "lo": 0.07833413291554128,
+      "hi": 0.13289166264461963
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.10561289778008046,
+      "lo": 0.07833413291554128,
+      "hi": 0.13289166264461963
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.26308384053585293,
+      "lo": 0.20695859662411412,
+      "hi": 0.3192090844475917
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 301.0,
+      "lo": 224.03801600378443,
+      "hi": 377.96198399621557
+     },
+     "bytes_amp": {
+      "mean": 1.0838339829695847,
+      "lo": 1.0540117398109112,
+      "hi": 1.113656226128258
+     },
+     "bytes_per_mut": {
+      "mean": 2295.055272184388,
+      "lo": 2096.285262527432,
+      "hi": 2493.8252818413434
+     }
+    },
+    "long_offline": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.2827507156612854,
+      "lo": 0.2460995366477981,
+      "hi": 0.3194018946747727
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 7188.714285714285,
+      "lo": 6477.339839535355,
+      "hi": 7900.0887318932155
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1966.5655000555332,
+      "lo": 1881.9683452965833,
+      "hi": 2051.162654814483
+     }
+    },
+    "concurrent_edits": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.1596495986905194,
+      "lo": 0.12429482679020652,
+      "hi": 0.19500437059083225
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.25335556513945257,
+      "lo": 0.19967229040421028,
+      "hi": 0.3070388398746949
+     },
+     "silent_total": {
+      "mean": 0.1596495986905194,
+      "lo": 0.12429482679020652,
+      "hi": 0.19500437059083225
+     },
+     "convergence_ms": {
+      "mean": 190.57142857142856,
+      "lo": 181.96446591686922,
+      "hi": 199.1783912259879
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1941.7707862280113,
+      "lo": 1838.2505549033222,
+      "hi": 2045.2910175527004
+     }
+    },
+    "large_payload_sync": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.2971970831680155,
+      "lo": 0.2601120980326731,
+      "hi": 0.33428206830335794
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 1250.1428571428573,
+      "lo": 1027.7223393105603,
+      "hi": 1472.5633749751544
+     },
+     "bytes_amp": {
+      "mean": 1.250260354832001,
+      "lo": 1.1995562824648414,
+      "hi": 1.3009644271991607
+     },
+     "bytes_per_mut": {
+      "mean": 198043.89887361476,
+      "lo": 181544.44368698745,
+      "hi": 214543.35406024207
+     }
+    },
+    "partial_write": {
+     "lost": {
+      "mean": 0.10550237929990443,
+      "lo": 0.07321518733520074,
+      "hi": 0.1377895712646081
+     },
+     "redelivery_dups": {
+      "mean": 0.3290041611580349,
+      "lo": 0.24362403791491838,
+      "hi": 0.4143842844011514
+     },
+     "uvf": {
+      "mean": 0.16017406680785445,
+      "lo": 0.12738663824603422,
+      "hi": 0.1929614953696747
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.22143257226022653,
+      "lo": 0.18001636325087195,
+      "hi": 0.2628487812695811
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 620.0,
+      "lo": 558.9948497589819,
+      "hi": 681.0051502410181
+     },
+     "bytes_amp": {
+      "mean": 1.352110466410516,
+      "lo": 1.2778037596709462,
+      "hi": 1.4264171731500856
+     },
+     "bytes_per_mut": {
+      "mean": 2763.278080078665,
+      "lo": 2474.739177295741,
+      "hi": 3051.816982861589
+     }
+    },
+    "clock_skew": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.1033388377878833,
+      "lo": 0.03224453211018043,
+      "hi": 0.1744331434655862
+     },
+     "create_collisions": {
+      "mean": 0.27325475587603415,
+      "lo": 0.22325876610929074,
+      "hi": 0.32325074564277756
+     },
+     "silent_total": {
+      "mean": 0.1033388377878833,
+      "lo": 0.03224453211018043,
+      "hi": 0.1744331434655862
+     },
+     "convergence_ms": {
+      "mean": 198.57142857142858,
+      "lo": 187.28374959630847,
+      "hi": 209.8591075465487
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1931.9540084089385,
+      "lo": 1827.6975669444953,
+      "hi": 2036.2104498733818
+     }
+    },
+    "conflict_storm": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.3320129941897183,
+      "lo": 0.2680392731589736,
+      "hi": 0.395986715220463
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.24877131766197103,
+      "lo": 0.2000110384665447,
+      "hi": 0.29753159685739733
+     },
+     "silent_total": {
+      "mean": 0.3320129941897183,
+      "lo": 0.2680392731589736,
+      "hi": 0.395986715220463
+     },
+     "convergence_ms": {
+      "mean": 1230.4285714285713,
+      "lo": 1095.3375265285042,
+      "hi": 1365.5196163286384
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1935.998636298416,
+      "lo": 1818.6649937180487,
+      "hi": 2053.332278878783
+     }
+    }
+   },
+   "cpu_ms_per_scenario": 0.375755780952382,
+   "n_scenarios": 840,
+   "maxrss_mib": 104.1796875,
+   "rss_after_import_mib": 104.1796875
+  },
+  "durable_idempotent_queue": {
+   "overall": {
+    "lost": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "redelivery_dups": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "uvf": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "phantom_failures": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "conflicts_surfaced": {
+     "mean": 0.06270666192703327,
+     "lo": 0.05197812093165325,
+     "hi": 0.07343520292241329
+    },
+    "silent_overwrites": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "silent_discards": {
+     "mean": 0.009137398698029252,
+     "lo": 0.0029950740248482393,
+     "hi": 0.015279723371210266
+    },
+    "create_collisions": {
+     "mean": 0.26070253286028605,
+     "lo": 0.24720739567854874,
+     "hi": 0.27419767004202333
+    },
+    "silent_total": {
+     "mean": 0.009137398698029252,
+     "lo": 0.0029950740248482393,
+     "hi": 0.015279723371210266
+    },
+    "convergence_ms": {
+     "mean": 1174.3095238095239,
+     "lo": 1102.7183893051629,
+     "hi": 1245.9006583138848
+    },
+    "bytes_amp": {
+     "mean": 1.2353416264030743,
+     "lo": 1.190236659109339,
+     "hi": 1.2804465936968097
+    },
+    "bytes_per_mut": {
+     "mean": 19341.351379675496,
+     "lo": 17139.142755336867,
+     "hi": 21543.560004014125
+    }
+   },
+   "by_fault": {
+    "packet_loss": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.18372785306579512,
+      "lo": 0.12575110555098418,
+      "hi": 0.24170460058060605
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 838.8571428571429,
+      "lo": 690.7157776934307,
+      "hi": 986.9985080208551
+     },
+     "bytes_amp": {
+      "mean": 1.5358624734536006,
+      "lo": 1.406800781286132,
+      "hi": 1.6649241656210692
+     },
+     "bytes_per_mut": {
+      "mean": 3009.345279622018,
+      "lo": 2679.157442274007,
+      "hi": 3339.5331169700294
+     }
+    },
+    "latency_jitter": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.24298761302612393,
+      "lo": 0.19189426705881485,
+      "hi": 0.294080958993433
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 725.1428571428572,
+      "lo": 676.9099611302382,
+      "hi": 773.3757531554762
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 2131.8879111351193,
+      "lo": 2021.197336242927,
+      "hi": 2242.5784860273116
+     }
+    },
+    "partition": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.28778176399208866,
+      "lo": 0.24299292522901897,
+      "hi": 0.3325706027551584
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 1037.5714285714284,
+      "lo": 774.3125364692653,
+      "hi": 1300.8303206735916
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1984.0792212173096,
+      "lo": 1897.664137197418,
+      "hi": 2070.4943052372014
+     }
+    },
+    "dup": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.23074328411260012,
+      "lo": 0.18044773028683075,
+      "hi": 0.2810388379383695
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 123.42857142857142,
+      "lo": 115.642738799132,
+      "hi": 131.2144040580108
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1910.9445771972937,
+      "lo": 1773.8910525928009,
+      "hi": 2047.9981018017866
+     }
+    },
+    "reorder": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.2900784513867678,
+      "lo": 0.2237039461040564,
+      "hi": 0.3564529566694792
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 230.2857142857143,
+      "lo": 196.26950586117164,
+      "hi": 264.301922710257
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 2121.073647159992,
+      "lo": 2041.2174738050378,
+      "hi": 2200.929820514946
+     }
+    },
+    "crash": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.2878622618142742,
+      "lo": 0.2388374940909449,
+      "hi": 0.3368870295376035
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 333.5714285714286,
+      "lo": 251.7478981941237,
+      "hi": 415.3949589487335
+     },
+     "bytes_amp": {
+      "mean": 1.2208322691928137,
+      "lo": 1.1470483279247672,
+      "hi": 1.2946162104608603
+     },
+     "bytes_per_mut": {
+      "mean": 2585.8039378025032,
+      "lo": 2319.265417693628,
+      "hi": 2852.3424579113785
+     }
+    },
+    "long_offline": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.2827507156612854,
+      "lo": 0.2460995366477981,
+      "hi": 0.3194018946747727
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 7188.714285714285,
+      "lo": 6477.339839535355,
+      "hi": 7900.0887318932155
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1966.5655000555332,
+      "lo": 1881.9683452965833,
+      "hi": 2051.162654814483
+     }
+    },
+    "concurrent_edits": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.31032229569313974,
+      "lo": 0.25351189500684335,
+      "hi": 0.36713269637943613
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.25335556513945257,
+      "lo": 0.19967229040421028,
+      "hi": 0.3070388398746949
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 190.57142857142856,
+      "lo": 181.96446591686922,
+      "hi": 199.1783912259879
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1941.7707862280113,
+      "lo": 1838.2505549033222,
+      "hi": 2045.2910175527004
+     }
+    },
+    "large_payload_sync": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.2971970831680155,
+      "lo": 0.2601120980326731,
+      "hi": 0.33428206830335794
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 1250.1428571428573,
+      "lo": 1027.7223393105603,
+      "hi": 1472.5633749751544
+     },
+     "bytes_amp": {
+      "mean": 1.250260354832001,
+      "lo": 1.1995562824648414,
+      "hi": 1.3009644271991607
+     },
+     "bytes_per_mut": {
+      "mean": 198043.89887361476,
+      "lo": 181544.44368698745,
+      "hi": 214543.35406024207
+     }
+    },
+    "partial_write": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.2515228322061177,
+      "lo": 0.2065841716803627,
+      "hi": 0.2964614927318727
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 744.4285714285713,
+      "lo": 638.0755387134543,
+      "hi": 850.7816041436884
+     },
+     "bytes_amp": {
+      "mean": 1.6265535947215093,
+      "lo": 1.5265866440384053,
+      "hi": 1.7265205454046133
+     },
+     "bytes_per_mut": {
+      "mean": 3317.701751816985,
+      "lo": 3002.6006458861557,
+      "hi": 3632.8028577478144
+     }
+    },
+    "clock_skew": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.1033388377878833,
+      "lo": 0.03224453211018043,
+      "hi": 0.1744331434655862
+     },
+     "create_collisions": {
+      "mean": 0.27325475587603415,
+      "lo": 0.22325876610929074,
+      "hi": 0.32325074564277756
+     },
+     "silent_total": {
+      "mean": 0.1033388377878833,
+      "lo": 0.03224453211018043,
+      "hi": 0.1744331434655862
+     },
+     "convergence_ms": {
+      "mean": 198.57142857142858,
+      "lo": 187.28374959630847,
+      "hi": 209.8591075465487
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1931.9540084089385,
+      "lo": 1827.6975669444953,
+      "hi": 2036.2104498733818
+     }
+    },
+    "conflict_storm": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.4606275428292216,
+      "lo": 0.38487186630524617,
+      "hi": 0.536383219353197
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.24877131766197103,
+      "lo": 0.2000110384665447,
+      "hi": 0.29753159685739733
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 1230.4285714285713,
+      "lo": 1095.3375265285042,
+      "hi": 1365.5196163286384
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1935.998636298416,
+      "lo": 1818.6649937180487,
+      "hi": 2053.332278878783
+     }
+    }
+   },
+   "cpu_ms_per_scenario": 0.4755087309523808,
+   "n_scenarios": 840,
+   "maxrss_mib": 104.5546875,
+   "rss_after_import_mib": 104.5546875
+  },
+  "durable_batched_fsync": {
+   "overall": {
+    "lost": {
+     "mean": 0.011857297673845229,
+     "lo": 0.008681445106370858,
+     "hi": 0.0150331502413196
+    },
+    "redelivery_dups": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "uvf": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "phantom_failures": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "conflicts_surfaced": {
+     "mean": 0.06270666192703327,
+     "lo": 0.05197812093165325,
+     "hi": 0.07343520292241329
+    },
+    "silent_overwrites": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "silent_discards": {
+     "mean": 0.009137398698029252,
+     "lo": 0.0029950740248482393,
+     "hi": 0.015279723371210266
+    },
+    "create_collisions": {
+     "mean": 0.2575449834928693,
+     "lo": 0.24369639291347295,
+     "hi": 0.27139357407226566
+    },
+    "silent_total": {
+     "mean": 0.009137398698029252,
+     "lo": 0.0029950740248482393,
+     "hi": 0.015279723371210266
+    },
+    "convergence_ms": {
+     "mean": 1167.2142857142858,
+     "lo": 1094.1345914978053,
+     "hi": 1240.2939799307662
+    },
+    "bytes_amp": {
+     "mean": 1.2325685511746116,
+     "lo": 1.1878200570309394,
+     "hi": 1.2773170453182838
+    },
+    "bytes_per_mut": {
+     "mean": 19298.61143459537,
+     "lo": 17098.89967660608,
+     "hi": 21498.323192584656
+    }
+   },
+   "by_fault": {
+    "packet_loss": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.18372785306579512,
+      "lo": 0.12575110555098418,
+      "hi": 0.24170460058060605
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 838.8571428571429,
+      "lo": 690.7157776934307,
+      "hi": 986.9985080208551
+     },
+     "bytes_amp": {
+      "mean": 1.5358624734536006,
+      "lo": 1.406800781286132,
+      "hi": 1.6649241656210692
+     },
+     "bytes_per_mut": {
+      "mean": 3009.345279622018,
+      "lo": 2679.157442274007,
+      "hi": 3339.5331169700294
+     }
+    },
+    "latency_jitter": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.24298761302612393,
+      "lo": 0.19189426705881485,
+      "hi": 0.294080958993433
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 725.1428571428572,
+      "lo": 676.9099611302382,
+      "hi": 773.3757531554762
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 2131.8879111351193,
+      "lo": 2021.197336242927,
+      "hi": 2242.5784860273116
+     }
+    },
+    "partition": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.28778176399208866,
+      "lo": 0.24299292522901897,
+      "hi": 0.3325706027551584
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 1037.5714285714284,
+      "lo": 774.3125364692653,
+      "hi": 1300.8303206735916
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1984.0792212173096,
+      "lo": 1897.664137197418,
+      "hi": 2070.4943052372014
+     }
+    },
+    "dup": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.23074328411260012,
+      "lo": 0.18044773028683075,
+      "hi": 0.2810388379383695
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 123.42857142857142,
+      "lo": 115.642738799132,
+      "hi": 131.2144040580108
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1910.9445771972937,
+      "lo": 1773.8910525928009,
+      "hi": 2047.9981018017866
+     }
+    },
+    "reorder": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.2900784513867678,
+      "lo": 0.2237039461040564,
+      "hi": 0.3564529566694792
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 230.2857142857143,
+      "lo": 196.26950586117164,
+      "hi": 264.301922710257
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 2121.073647159992,
+      "lo": 2041.2174738050378,
+      "hi": 2200.929820514946
+     }
+    },
+    "crash": {
+     "lost": {
+      "mean": 0.06269977873538246,
+      "lo": 0.04713864021964467,
+      "hi": 0.07826091725112025
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.27282193577394814,
+      "lo": 0.22265889638979164,
+      "hi": 0.32298497515810465
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 327.57142857142856,
+      "lo": 221.30724698224276,
+      "hi": 433.83561016061435
+     },
+     "bytes_amp": {
+      "mean": 1.1395709792078692,
+      "lo": 1.0735731955693149,
+      "hi": 1.2055687628464236
+     },
+     "bytes_per_mut": {
+      "mean": 2416.094622635107,
+      "lo": 2153.30703639082,
+      "hi": 2678.882208879394
+     }
+    },
+    "long_offline": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.2827507156612854,
+      "lo": 0.2460995366477981,
+      "hi": 0.3194018946747727
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 7188.714285714285,
+      "lo": 6477.339839535355,
+      "hi": 7900.0887318932155
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1966.5655000555332,
+      "lo": 1881.9683452965833,
+      "hi": 2051.162654814483
+     }
+    },
+    "concurrent_edits": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.31032229569313974,
+      "lo": 0.25351189500684335,
+      "hi": 0.36713269637943613
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.25335556513945257,
+      "lo": 0.19967229040421028,
+      "hi": 0.3070388398746949
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 190.57142857142856,
+      "lo": 181.96446591686922,
+      "hi": 199.1783912259879
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1941.7707862280113,
+      "lo": 1838.2505549033222,
+      "hi": 2045.2910175527004
+     }
+    },
+    "large_payload_sync": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.2971970831680155,
+      "lo": 0.2601120980326731,
+      "hi": 0.33428206830335794
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 1250.1428571428573,
+      "lo": 1027.7223393105603,
+      "hi": 1472.5633749751544
+     },
+     "bytes_amp": {
+      "mean": 1.250260354832001,
+      "lo": 1.1995562824648414,
+      "hi": 1.3009644271991607
+     },
+     "bytes_per_mut": {
+      "mean": 198043.89887361476,
+      "lo": 181544.44368698745,
+      "hi": 214543.35406024207
+     }
+    },
+    "partial_write": {
+     "lost": {
+      "mean": 0.08190597680106289,
+      "lo": 0.04531204330834025,
+      "hi": 0.11849991029378552
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.22940189968077346,
+      "lo": 0.19352439241970393,
+      "hi": 0.265279406941843
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 665.2857142857143,
+      "lo": 595.5421282219029,
+      "hi": 735.0293003495258
+     },
+     "bytes_amp": {
+      "mean": 1.4440669211151183,
+      "lo": 1.3451573604042857,
+      "hi": 1.5429764818259508
+     },
+     "bytes_per_mut": {
+      "mean": 2950.842856451377,
+      "lo": 2625.44889961078,
+      "hi": 3276.236813291974
+     }
+    },
+    "clock_skew": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.1033388377878833,
+      "lo": 0.03224453211018043,
+      "hi": 0.1744331434655862
+     },
+     "create_collisions": {
+      "mean": 0.27325475587603415,
+      "lo": 0.22325876610929074,
+      "hi": 0.32325074564277756
+     },
+     "silent_total": {
+      "mean": 0.1033388377878833,
+      "lo": 0.03224453211018043,
+      "hi": 0.1744331434655862
+     },
+     "convergence_ms": {
+      "mean": 198.57142857142858,
+      "lo": 187.28374959630847,
+      "hi": 209.8591075465487
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1931.9540084089385,
+      "lo": 1827.6975669444953,
+      "hi": 2036.2104498733818
+     }
+    },
+    "conflict_storm": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.4606275428292216,
+      "lo": 0.38487186630524617,
+      "hi": 0.536383219353197
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.24877131766197103,
+      "lo": 0.2000110384665447,
+      "hi": 0.29753159685739733
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 1230.4285714285713,
+      "lo": 1095.3375265285042,
+      "hi": 1365.5196163286384
+     },
+     "bytes_amp": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+     },
+     "bytes_per_mut": {
+      "mean": 1935.998636298416,
+      "lo": 1818.6649937180487,
+      "hi": 2053.332278878783
+     }
+    }
+   },
+   "cpu_ms_per_scenario": 0.40843466071428575,
+   "n_scenarios": 840,
+   "maxrss_mib": 105.3046875,
+   "rss_after_import_mib": 105.3046875
+  },
+  "crdt_yjs": {
+   "overall": {
+    "lost": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "redelivery_dups": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "uvf": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "phantom_failures": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "conflicts_surfaced": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "silent_overwrites": {
+     "mean": 0.03617010817037373,
+     "lo": 0.027851608047293946,
+     "hi": 0.04448860829345351
+    },
+    "silent_discards": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "create_collisions": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "silent_total": {
+     "mean": 0.03617010817037373,
+     "lo": 0.027851608047293946,
+     "hi": 0.04448860829345351
+    },
+    "convergence_ms": {
+     "mean": 1125.8571428571427,
+     "lo": 1056.2879823286585,
+     "hi": 1195.4263033856269
+    },
+    "bytes_amp": {
+     "mean": 1.2236600748524318,
+     "lo": 1.13958779975743,
+     "hi": 1.3077323499474336
+    },
+    "bytes_per_mut": {
+     "mean": 19077.367787474654,
+     "lo": 16916.877415714982,
+     "hi": 21237.858159234325
+    }
+   },
+   "by_fault": {
+    "packet_loss": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 615.7142857142857,
+      "lo": 545.1881923826276,
+      "hi": 686.2403790459438
+     },
+     "bytes_amp": {
+      "mean": 1.6182218537800641,
+      "lo": 1.4504613171627998,
+      "hi": 1.7859823903973284
+     },
+     "bytes_per_mut": {
+      "mean": 3161.4325210546995,
+      "lo": 2802.0265742089014,
+      "hi": 3520.8384679004976
+     }
+    },
+    "latency_jitter": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 1049.857142857143,
+      "lo": 956.5568437359809,
+      "hi": 1143.1574419783049
+     },
+     "bytes_amp": {
+      "mean": 1.0501251764494655,
+      "lo": 1.045057894258567,
+      "hi": 1.0551924586403638
+     },
+     "bytes_per_mut": {
+      "mean": 2237.906009834168,
+      "lo": 2130.22638827592,
+      "hi": 2345.585631392416
+     }
+    },
+    "partition": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 1035.857142857143,
+      "lo": 773.5567572189528,
+      "hi": 1298.1575284953328
+     },
+     "bytes_amp": {
+      "mean": 1.0564555751170213,
+      "lo": 1.0531296710341869,
+      "hi": 1.0597814791998557
+     },
+     "bytes_per_mut": {
+      "mean": 2095.7833924907172,
+      "lo": 2008.6674768084788,
+      "hi": 2182.899308172956
+     }
+    },
+    "dup": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 115.42857142857144,
+      "lo": 107.39914361706984,
+      "hi": 123.45799924007305
+     },
+     "bytes_amp": {
+      "mean": 1.0610740037385482,
+      "lo": 1.053628152476584,
+      "hi": 1.0685198550005124
+     },
+     "bytes_per_mut": {
+      "mean": 2026.2410448789583,
+      "lo": 1892.0568236394286,
+      "hi": 2160.4252661184883
+     }
+    },
+    "reorder": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 356.85714285714283,
+      "lo": 323.0393691400781,
+      "hi": 390.67491657420754
+     },
+     "bytes_amp": {
+      "mean": 1.0478991643006776,
+      "lo": 1.0447044184245782,
+      "hi": 1.0510939101767771
+     },
+     "bytes_per_mut": {
+      "mean": 2222.3642858973208,
+      "lo": 2143.0857495651762,
+      "hi": 2301.6428222294653
+     }
+    },
+    "crash": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 258.1428571428571,
+      "lo": 183.37580046381055,
+      "hi": 332.9099138219037
+     },
+     "bytes_amp": {
+      "mean": 1.3039266033271222,
+      "lo": 1.1633139189610553,
+      "hi": 1.444539287693189
+     },
+     "bytes_per_mut": {
+      "mean": 2756.460391112815,
+      "lo": 2401.582398096559,
+      "hi": 3111.3383841290715
+     }
+    },
+    "long_offline": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 7177.857142857142,
+      "lo": 6465.355480594687,
+      "hi": 7890.3588051195975
+     },
+     "bytes_amp": {
+      "mean": 1.0528348364657854,
+      "lo": 1.0483174956475358,
+      "hi": 1.0573521772840349
+     },
+     "bytes_per_mut": {
+      "mean": 2070.0067928124245,
+      "lo": 1986.7495719411347,
+      "hi": 2153.264013683714
+     }
+    },
+    "concurrent_edits": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.12746251254563273,
+      "lo": 0.09615246107041533,
+      "hi": 0.15877256402085013
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_total": {
+      "mean": 0.12746251254563273,
+      "lo": 0.09615246107041533,
+      "hi": 0.15877256402085013
+     },
+     "convergence_ms": {
+      "mean": 226.85714285714283,
+      "lo": 213.58680016034188,
+      "hi": 240.12748555394379
+     },
+     "bytes_amp": {
+      "mean": 1.055112977544986,
+      "lo": 1.0503306807380426,
+      "hi": 1.0598952743519292
+     },
+     "bytes_per_mut": {
+      "mean": 2048.033946213192,
+      "lo": 1946.3474135539202,
+      "hi": 2149.720478872464
+     }
+    },
+    "large_payload_sync": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 952.8571428571429,
+      "lo": 783.9097040388122,
+      "hi": 1121.8045816754736
+     },
+     "bytes_amp": {
+      "mean": 1.2333202211430048,
+      "lo": 1.1375974186389297,
+      "hi": 1.3290430236470798
+     },
+     "bytes_per_mut": {
+      "mean": 194595.63738988727,
+      "lo": 177482.40678392336,
+      "hi": 211708.86799585118
+     }
+    },
+    "partial_write": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 255.0,
+      "lo": 196.52533312673984,
+      "hi": 313.47466687326016
+     },
+     "bytes_amp": {
+      "mean": 1.4013875996151488,
+      "lo": 1.3098210515059259,
+      "hi": 1.4929541477243717
+     },
+     "bytes_per_mut": {
+      "mean": 2847.4393482129726,
+      "lo": 2635.5619484741387,
+      "hi": 3059.3167479518065
+     }
+    },
+    "clock_skew": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_total": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "convergence_ms": {
+      "mean": 235.42857142857142,
+      "lo": 218.5757079890729,
+      "hi": 252.28143486806994
+     },
+     "bytes_amp": {
+      "mean": 1.0536680316767597,
+      "lo": 1.0494101519648207,
+      "hi": 1.0579259113886987
+     },
+     "bytes_per_mut": {
+      "mean": 2034.8981428064849,
+      "lo": 1932.590806994189,
+      "hi": 2137.2054786187805
+     }
+    },
+    "conflict_storm": {
+     "lost": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "redelivery_dups": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "uvf": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "phantom_failures": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "conflicts_surfaced": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_overwrites": {
+      "mean": 0.3165798600723737,
+      "lo": 0.2396434743642377,
+      "hi": 0.3935162457805097
+     },
+     "silent_discards": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "create_collisions": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+     },
+     "silent_total": {
+      "mean": 0.3165798600723737,
+      "lo": 0.2396434743642377,
+      "hi": 0.3935162457805097
+     },
+     "convergence_ms": {
+      "mean": 1230.4285714285713,
+      "lo": 1095.3375265285042,
+      "hi": 1365.5196163286384
+     },
+     "bytes_amp": {
+      "mean": 1.0564424845558353,
+      "lo": 1.0531822901326493,
+      "hi": 1.0597026789790214
+     },
+     "bytes_per_mut": {
+      "mean": 2044.7030874018606,
+      "lo": 1926.2274202088,
+      "hi": 2163.178754594921
+     }
+    }
+   },
+   "cpu_ms_per_scenario": 1.1153105869047608,
+   "n_scenarios": 840,
+   "maxrss_mib": 113.1328125,
+   "rss_after_import_mib": 105.4296875
+  }
+ }
+}
