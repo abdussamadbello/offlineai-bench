@@ -1,0 +1,152 @@
+{
+ "cloud_only": {
+  "reps": [
+   {
+    "cpu_ms_per_scenario": 0.2011871107142859,
+    "drss_mib": 7.5
+   },
+   {
+    "cpu_ms_per_scenario": 0.20882505357142908,
+    "drss_mib": 7.375
+   },
+   {
+    "cpu_ms_per_scenario": 0.19563650357142853,
+    "drss_mib": 7.5
+   },
+   {
+    "cpu_ms_per_scenario": 0.18257781190476266,
+    "drss_mib": 7.5
+   },
+   {
+    "cpu_ms_per_scenario": 0.20460186666666702,
+    "drss_mib": 7.375
+   }
+  ],
+  "cpu_median": 0.2011871107142859,
+  "cpu_min": 0.18257781190476266,
+  "cpu_max": 0.20882505357142908,
+  "drss_median": 7.5,
+  "drss_min": 7.375,
+  "drss_max": 7.5
+ },
+ "naive_retry_queue": {
+  "reps": [
+   {
+    "cpu_ms_per_scenario": 0.35004809285714383,
+    "drss_mib": 7.625
+   },
+   {
+    "cpu_ms_per_scenario": 0.35928550952380905,
+    "drss_mib": 7.5
+   },
+   {
+    "cpu_ms_per_scenario": 0.3635179547619044,
+    "drss_mib": 7.5
+   },
+   {
+    "cpu_ms_per_scenario": 0.36301646190476117,
+    "drss_mib": 7.625
+   },
+   {
+    "cpu_ms_per_scenario": 0.37357289285714224,
+    "drss_mib": 7.625
+   }
+  ],
+  "cpu_median": 0.36301646190476117,
+  "cpu_min": 0.35004809285714383,
+  "cpu_max": 0.37357289285714224,
+  "drss_median": 7.625,
+  "drss_min": 7.5,
+  "drss_max": 7.625
+ },
+ "durable_idempotent_queue": {
+  "reps": [
+   {
+    "cpu_ms_per_scenario": 0.3657200666666675,
+    "drss_mib": 7.625
+   },
+   {
+    "cpu_ms_per_scenario": 0.3875738869047616,
+    "drss_mib": 7.5
+   },
+   {
+    "cpu_ms_per_scenario": 0.3826177630952398,
+    "drss_mib": 7.5
+   },
+   {
+    "cpu_ms_per_scenario": 0.35690760833333285,
+    "drss_mib": 7.625
+   },
+   {
+    "cpu_ms_per_scenario": 0.3759370071428575,
+    "drss_mib": 7.625
+   }
+  ],
+  "cpu_median": 0.3759370071428575,
+  "cpu_min": 0.35690760833333285,
+  "cpu_max": 0.3875738869047616,
+  "drss_median": 7.625,
+  "drss_min": 7.5,
+  "drss_max": 7.625
+ },
+ "durable_batched_fsync": {
+  "reps": [
+   {
+    "cpu_ms_per_scenario": 0.37997795238095255,
+    "drss_mib": 7.5
+   },
+   {
+    "cpu_ms_per_scenario": 0.3754756333333339,
+    "drss_mib": 7.5
+   },
+   {
+    "cpu_ms_per_scenario": 0.3821464702380962,
+    "drss_mib": 7.625
+   },
+   {
+    "cpu_ms_per_scenario": 0.37602965357142865,
+    "drss_mib": 7.625
+   },
+   {
+    "cpu_ms_per_scenario": 0.37909453333333304,
+    "drss_mib": 7.5
+   }
+  ],
+  "cpu_median": 0.37909453333333304,
+  "cpu_min": 0.3754756333333339,
+  "cpu_max": 0.3821464702380962,
+  "drss_median": 7.5,
+  "drss_min": 7.5,
+  "drss_max": 7.625
+ },
+ "crdt_yjs": {
+  "reps": [
+   {
+    "cpu_ms_per_scenario": 1.0471421952380944,
+    "drss_mib": 16.27734375
+   },
+   {
+    "cpu_ms_per_scenario": 1.0425781666666676,
+    "drss_mib": 16.33984375
+   },
+   {
+    "cpu_ms_per_scenario": 1.0443534797619047,
+    "drss_mib": 16.16015625
+   },
+   {
+    "cpu_ms_per_scenario": 1.1469520690476196,
+    "drss_mib": 16.2578125
+   },
+   {
+    "cpu_ms_per_scenario": 1.1003399940476193,
+    "drss_mib": 16.2734375
+   }
+  ],
+  "cpu_median": 1.0471421952380944,
+  "cpu_min": 1.0425781666666676,
+  "cpu_max": 1.1469520690476196,
+  "drss_median": 16.2734375,
+  "drss_min": 16.16015625,
+  "drss_max": 16.33984375
+ }
+}
