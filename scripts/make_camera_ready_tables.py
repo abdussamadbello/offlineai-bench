@@ -8,6 +8,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 OUT = Path(sys.argv[1])
 r = json.loads((ROOT / "artifacts/camera_ready.json").read_text())
+res = json.loads((ROOT / "artifacts/resources_reps.json").read_text())  # 5 repeated child runs
 def pm(d, p=3):
     return f"${d['mean']:.{p}f}{{\\pm}}{(d['hi']-d['lo'])/2:.{p}f}$"
 def m(d, p=3): return f"{d['mean']:.{p}f}"
@@ -48,7 +49,7 @@ L = ["\\begin{tabular}{@{}lcccccc@{}}\\toprule",
      " & & ovw. & fail. & & ms/scn & MiB \\\\ \\midrule"]
 for c, d in r["v02"].items():
     o = d["overall"]
-    L.append(f"{short[c]} & {pm(o['lost'])} & {pm(o['silent_total'])} & {m(o['phantom_failures'])} & {o['bytes_amp']['mean']:.2f} & {d['cpu_ms_per_scenario']:.2f} & {d['maxrss_mib']-d['rss_after_import_mib']:.1f} \\\\")
+    L.append(f"{short[c]} & {pm(o['lost'])} & {pm(o['silent_total'])} & {m(o['phantom_failures'])} & {o['bytes_amp']['mean']:.2f} & {res[c]['cpu_median']:.2f} & {res[c]['drss_median']:.1f} \\\\")
 L.append("\\bottomrule\\end{tabular}")
 (OUT / "tab_v02_overall.tex").write_text("\n".join(L))
 # Figure: hard faults, lost / dup / silent / surfaced with CI

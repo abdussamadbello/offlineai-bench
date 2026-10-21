@@ -1,0 +1,8 @@
+# tc netem feasibility probe (2026-10-21 20:08 WAT)
+$ unshare -rn tc qdisc add dev lo root netem delay 100ms loss 10%
+Error: Specified qdisc kind is unknown.
+$ sudo modprobe sch_netem
+modprobe: FATAL: Module sch_netem not found in directory /lib/modules/6.12.94+
+$ zcat /proc/config.gz | grep NETEM
+# CONFIG_NET_SCH_NETEM is not set
+kernel: 6.12.94+
